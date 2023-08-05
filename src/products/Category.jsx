@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom"
 import ProductCard from "./ProductCard";
 
 export default function Category() {
-    // const params = useParams();
     const {categoryName} = useParams();
     const [categoryProducts, setCategoryProducts] = useState([]);
     

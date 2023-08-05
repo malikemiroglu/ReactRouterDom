@@ -28,7 +28,7 @@ export default function ProductCard({ item }) {
                 <h5 className="card-title">{item.title}</h5>
                 <p className="card-text">{item.description.substring(0,31)}..</p>
                 <p className="lead"><b>${item.price}</b></p>
-                { user && <a href="#" className="btn btn-primary" onClick={() => handleClick(item)}>Fav</a> }
+                { user && <button className="btn btn-primary" onClick={() => handleClick(item)}>Fav</button> }
             </div>
         </div>
     )

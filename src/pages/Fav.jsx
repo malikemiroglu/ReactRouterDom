@@ -1,10 +1,14 @@
-import { useContext, useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
-import { SiteContext } from "../context/SiteContext";
 
 export default function Fav() {
     const [favs, setFavs] = useState([]);
-    
+
+    function deleteFav(id) {
+        const updatedFavs = favs.filter(item => item.id !== id);
+        setFavs(updatedFavs);
+        localStorage.setItem('favs', JSON.stringify(updatedFavs));
+    }
 
     useEffect(() => {
         setFavs(JSON.parse(localStorage.getItem("favs")) ?? []);
@@ -24,7 +28,7 @@ export default function Fav() {
                             >
                             {item.title.toUpperCase()}
                         </Link>
-                        <button >Sil</button>
+                        <button className="btnFav" onClick={() => deleteFav(item.id)}>Sil</button>
                     </li>
                 )
             }

@@ -8,7 +8,7 @@ const SiteContext = createContext();
 function SiteContextProvider({children}) {
     const [user, setUser] = useState(null);
     const navigate = useNavigate();
-    
+    console.log(user)
     useEffect(() => {
       setUser(JSON.parse(localStorage.getItem("user")) ?? null)
     }, [])

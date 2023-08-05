@@ -33,3 +33,14 @@ li {
 .favList button {
     padding: 5px 15px;
 }
+
+.btnFav {
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #000;
+}
+
+.btnFav:hover {
+    background-color: #000;
+    color: #fff;
+}

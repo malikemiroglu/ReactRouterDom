@@ -1,12 +1,9 @@
-import { useEffect, useState, useContext } from 'react'
 import Navbar from './components/Navbar'
 import SiteRoutes from './SiteRoutes'
-import { SiteContext } from './context/SiteContext';
 import './App.css'
 
 
 function App() {
-  const {user, handleLogin, handleLogout} = useContext(SiteContext);
 
   return (
     <>

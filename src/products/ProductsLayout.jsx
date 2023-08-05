@@ -6,7 +6,6 @@ export default function ProductsLayout() {
         <>
             <div className="row">
                 <div className="col-sm-8">
-                    {/* Outlet: Detay Sayfalarinin Burada Gosterilmesini Saglar */}
                     <Outlet />
                 </div>
                 <div className="col-sm-4">
