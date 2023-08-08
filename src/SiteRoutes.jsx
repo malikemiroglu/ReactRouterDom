@@ -29,7 +29,6 @@ export default function SiteRoutes() {
                     </PrivateRoute>
                 } 
             />
-
             <Route path='*' element={<PageNotFound />} />
 
         </Routes>
