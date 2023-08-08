@@ -1,7 +1,7 @@
 # React Router Dom ile Calismak
 
 ## Projenin Amaci:
-React Router Dom Genel Yapisini Anlamak ve Privite Route İle Calismayi Ogrenmek
+Fake API kullanarak React Router Dom Genel Yapisini Anlamak ve Privite Route İle Calismayi Ogrenmek
 
 ## Proje Kurulumu
 
